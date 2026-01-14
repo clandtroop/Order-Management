@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+git init
+   git add index.html
+   git commit -m "Initial commit - DME Order Management System"
+   git branch -M main
+   git remote add origin https://github.com/clandtroop/dme-order-management.git
+   git push -u origin main
