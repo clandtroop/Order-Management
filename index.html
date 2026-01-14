@@ -50,9 +50,9 @@
                 }
             ]);
 
-            const orderTypes = ['Wheelchair', 'CPAP Machine', 'Hospital Bed', 'Walker', 'Oxygen Concentrator', 'Nebulizer', 'Other'];
-            const salesReps = ['Sarah Johnson', 'Mike Chen', 'Alex Rivera', 'Emily Davis'];
-            const statuses = ['New', 'In Progress', 'Completed', 'On Hold'];
+            const orderTypes = ['CPAP', 'BiPAP', 'RAD (E0471)', 'Vent - NIV', 'Wheelchair', 'Hospital Bed', 'Walker/Rollator', 'Oxygen W/ POC', 'Oxyegen W/ Tanks', 'Nebulizer', ];
+            const salesReps = ['Gena Morrow', 'Jordan Henderson',];
+            const statuses = ['New', 'In Progress', 'Completed', 'On Hold - Pending Order', 'On Hold - Pending Notes', ];
 
             const [newOrder, setNewOrder] = useState({
                 orderNumber: '',
@@ -65,9 +65,8 @@
 
             const defaultTasks = [
                 { task: 'Verify insurance', completed: false },
-                { task: 'Order equipment', completed: false },
                 { task: 'Schedule delivery', completed: false },
-                { task: 'Complete delivery', completed: false }
+                { task: 'Ready to Manifest', completed: false }
             ];
 
             const addOrder = () => {
